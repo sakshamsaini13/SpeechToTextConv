@@ -65,7 +65,7 @@ let interim_span=document.getElementById("interim_span");
   {
     for(let i=0;i<langs.length;i++)
     {
-        selectLanguage.options[i]=new Option(langs[i][0],i);
+        selectLanguage.options[i]=new Option(langs[i][0],i);// select option mei pehele text dusre mei value
     }
     selectLanguage.selectedIndex=10;
 
@@ -159,7 +159,6 @@ let interim_span=document.getElementById("interim_span");
         recognition.stop();
         return;
      }
-     console.log("hello");
      finalTranscript='';
      recognition.lang=selectDialect.value;
      recognition.start();
